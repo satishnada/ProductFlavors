@@ -1,0 +1,109 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.simform.productflavor"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions "ice_cream"
+    productFlavors {
+        VanillaFlavor {
+            applicationId "com.simform.vanillaflavor"
+            dimension "ice_cream"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        ChocolateFlavor {
+            applicationId "com.simform.chocolateflavor"
+            dimension "ice_cream"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        StrawberryFlavor {
+            applicationId "com.simform.strawberryflavor"
+            dimension "ice_cream"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+
+    buildTypes {
+
+        debug{
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
+        beta{
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        VanillaFlavor {
+            res {
+                srcDirs 'src/VanillaFlavor/res'
+            }
+            java {
+                srcDirs 'src/VanillaFlavor/java'
+            }
+        }
+        ChocolateFlavor {
+            res {
+                srcDirs 'src/ChocolateFlavor/res'
+            }
+            java {
+                srcDirs 'src/ChocolateFlavor/java'
+            }
+        }
+        StrawberryFlavor {
+            res {
+                srcDirs 'src/StrawberryFlavor/res'
+            }
+            java {
+                srcDirs 'src/StrawberryFlavor/java'
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
