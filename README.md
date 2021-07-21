@@ -5,7 +5,7 @@
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 
 ### This Android Product Flavors Practical Demo Applications Done By Satish Nada
-Here is complete article with instruction of this.
+Here is complete article of Basic use of Android Product Flavors/build variants with instruction of this.
 https://medium.com/p/443c121f4325/edit
 
 <img src="https://github.com/satishnada/ProductFlavors/blob/master/android%20product%20flavors.jpg" alt="Android Product Flavors"/>
