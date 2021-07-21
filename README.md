@@ -8,6 +8,8 @@
 Here is complete article with instruction of this.
 https://medium.com/p/443c121f4325/edit
 
+https://github.com/satishnada/ProductFlavors/blob/master/android%20product%20flavors.jpg
+
 ### Pre-requisites ###
 
 * Android studio 4.0+
