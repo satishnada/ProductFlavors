@@ -8,7 +8,7 @@
 Here is complete article of Basic use of Android Product Flavors/build variants with instruction of this.
 https://medium.com/p/443c121f4325/edit
 
-<img src="https://github.com/satishnada/ProductFlavors/blob/master/android%20product%20flavors.jpg" alt="Android Product Flavors"/>
+<img src="https://github.com/satishnada/ProductFlavors/blob/master/Product%20Flavors.png" alt="Android Product Flavors"/>
 
 
 ### Pre-requisites ###
